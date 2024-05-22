@@ -9,7 +9,9 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
+                 dir (/root/){
                 git url: 'https://github.com/toufikj/terra.git', branch: 'master'
+                 }
             }
         }
 
